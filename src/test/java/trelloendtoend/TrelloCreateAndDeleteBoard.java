@@ -69,6 +69,6 @@ public class TrelloCreateAndDeleteBoard extends BaseClass {
         
         delete.getDeleteButton().click();
         logger.info("deleted the board");
-        
+        logger.info("test case passed");
 	}
 }
