@@ -6,6 +6,7 @@
       <class name="trelloendtoend.TrelloCreateAndDeleteBoard">
         <methods>
           <include name="CreateAndDeleteBoard"/>
+          <include name="executeAfterMethod"/>
           <include name="executeBeforeMethod"/>
         </methods>
       </class> <!-- trelloendtoend.TrelloCreateAndDeleteBoard -->

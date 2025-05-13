@@ -13,24 +13,31 @@ public class TrelloBoardsPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//p/span[text()='Create new board']")
-	private WebElement createNewBoardOption;
+	@FindBy(css = "button[aria-label='Create board or Workspace']")
+	private WebElement createButtonOption;
 	
-	public WebElement getCreateNewBoardOption() {
-		return createNewBoardOption;
+	public WebElement getCreateButtonOption() {
+		return createButtonOption;
 	}
+	@FindBy(css = "button[data-testid='header-create-board-button'] span[class='BmRHtH7FIX0jcL']")
+	private WebElement createBoardButton;
 
 	public WebElement getBoardTitle() {
 		return boardTitle;
 	}
 
-	public WebElement getCreateButton() {
-		return createButton;
+	public WebElement getCreateBoardButton() {
+		return createBoardButton;
 	}
 
 	@FindBy(xpath = "//input[@data-testid='create-board-title-input']")
 	private WebElement boardTitle;
 	
-	@FindBy(xpath = "//button[text()='Create']")
+	@FindBy(xpath = "//button[contains(text(),'Create')]")
 	private WebElement createButton;
+	
+	public WebElement getCreateButton() {
+		return createButton;
+		
+	}
 }

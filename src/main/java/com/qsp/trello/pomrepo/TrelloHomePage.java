@@ -13,10 +13,13 @@ WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//a[text()='Get Trello for free']/preceding-sibling::a[text()='Log in']")
-     private WebElement	loginOption;
+	@FindBy(xpath = "//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']")
+     private WebElement	loginButton;
 
-	public WebElement getLoginOption() {
-		return loginOption;
+	public WebElement getloginElement() {
+		return loginButton;
 	}
 }
+
+
+

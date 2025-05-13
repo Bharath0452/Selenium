@@ -12,7 +12,7 @@ WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id = "user")
+	@FindBy(id = "username")
 	private WebElement emailTextField;
 	
 	public WebElement getEmailTextField() {
@@ -23,6 +23,6 @@ WebDriver driver;
 		return loginButton;
 	}
 
-	@FindBy(id = "login")
+	@FindBy(id = "login-submit")
 	private WebElement loginButton;
 }

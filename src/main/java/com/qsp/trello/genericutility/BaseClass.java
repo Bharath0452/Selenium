@@ -30,6 +30,6 @@ public   FileUtility fileUtils = new FileUtility();
 @AfterMethod
 	public void executeAfterMethod() {
 		driver.manage().window().minimize();
-		driver.quit();
+//		driver.quit();
 	}
 }
